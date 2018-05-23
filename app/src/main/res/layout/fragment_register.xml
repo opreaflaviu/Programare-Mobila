@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/layout_login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="54dp"
+    android:paddingStart="54dp"
+    tools:ignore="MissingPrefix"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/register_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:hint="Username"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:inputType="textNoSuggestions"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/register_password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_user_name"
+        android:hint="Password"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:inputType="textPassword"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/register_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_password1"
+        android:hint="Reenter the password"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:inputType="textPassword"/>
+
+
+    <View
+        android:id="@+id/register_centered_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/register_password2"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/register_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_password2"
+        android:layout_toEndOf="@+id/register_centered_view"
+        android:layout_marginTop="16dp"
+        android:text="Register"
+        android:textSize="16dp"
+        android:background="?attr/selectableItemBackground"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/register_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_centered_view"
+        android:layout_toStartOf="@id/register_centered_view"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="Back"
+        android:textSize="16dp" />
+
+
+
+
+</RelativeLayout>

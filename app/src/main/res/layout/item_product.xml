@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#aaaaaa"
+    android:padding="8dp"
+    android:paddingBottom="16dp"
+    android:layout_marginTop="25dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_view_price"
+        android:layout_alignTop="@+id/image_view"
+        android:text="dsadsa"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_view"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_view_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_remove_from_cart"
+        android:layout_centerVertical="true"
+        android:text="dsadsa"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_add_to_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_view"
+        android:layout_alignParentEnd="true"
+        android:text="@string/adauga"
+        android:drawableStart="@drawable/ic_shopping_cart_black_24dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_remove_from_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_view"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/image_view"
+        android:text="@string/sterge"
+        android:drawableStart="@drawable/ic_remove_shopping_cart_black_24dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.flaviuoprea.shopapp.parts.products.CheckOutActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_products_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listItem="@layout/item_product"
+
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/total_price_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="bottom"
+        android:layout_weight="0"
+        android:padding="32dp"
+        android:text="@string/total"
+        android:textColor="#2A2A2A"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
